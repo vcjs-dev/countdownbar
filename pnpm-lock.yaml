@@ -37,6 +37,9 @@ devDependencies:
   cz-conventional-changelog:
     specifier: ^3.3.0
     version: 3.3.0
+  demoify:
+    specifier: ^1.3.0
+    version: 1.3.0(vue@3.3.4)
   eslint:
     specifier: ^8.45.0
     version: 8.45.0
@@ -52,6 +55,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.0
     version: 3.0.0
+  prismjs:
+    specifier: ^1.29.0
+    version: 1.29.0
   rollup:
     specifier: ^3.28.0
     version: 3.28.0
@@ -1637,6 +1643,14 @@ packages:
   /delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
+    dev: true
+
+  /demoify@1.3.0(vue@3.3.4):
+    resolution: {integrity: sha512-g8+7H6p98pjyOqD4TOa+erAGBFtSm9RCE4JBL1Ppy6yp69HOwh03/+Pyw3k1IpgV/dQ+F4wB8KwLBV7TW+hTzA==}
+    peerDependencies:
+      vue: ^3.3.4
+    dependencies:
+      vue: 3.3.4
     dev: true
 
   /destr@2.0.1:
@@ -3435,6 +3449,11 @@ packages:
       '@jest/schemas': 29.6.0
       ansi-styles: 5.2.0
       react-is: 18.2.0
+    dev: true
+
+  /prismjs@1.29.0:
+    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
+    engines: {node: '>=6'}
     dev: true
 
   /proto-list@1.2.4:
