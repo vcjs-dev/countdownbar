@@ -12,6 +12,8 @@ type CountdownBarOptions = {
   autoStart?: boolean
   time: number
   millisecond?: boolean
+  color?: string
+  fontSize?: string
   template?: (current: CurrentTime) => string
   onChange?: (current: CurrentTime) => void
   onFinish?: () => void
