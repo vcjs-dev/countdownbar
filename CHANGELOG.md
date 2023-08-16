@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.2.0...v1.3.0)
+
+### 🚀 Enhancements
+
+- Add color and font-size support ([cdbd83f](https://github.com/vcjs-dev/countdownbar/commit/cdbd83f))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.2.0
 
 [compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.1.0...v1.2.0)
