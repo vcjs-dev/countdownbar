@@ -20,6 +20,10 @@
     "countdown"
   ],
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/vcjs-dev/countdownbar"
+  },
+  "homepage": "https://github.com/vcjs-dev/countdownbar",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",

@@ -8,12 +8,12 @@ class CountdownBar implements CountdownBarInstance {
   rafId: number = 0
   endTime: number = 0
   counting: boolean = false
-  deactivated: boolean = false
 
   remain = 0
 
   options: CountdownBarOptions = {
     time: 0,
+    autoStart: true,
   }
 
   get current() {
@@ -23,6 +23,10 @@ class CountdownBar implements CountdownBarInstance {
   constructor(opts: CountdownBarOptions) {
     this.options = Object.assign(this.options, opts)
     this.remain = this.options.time
+
+    if (this.options.autoStart) {
+      this.start()
+    }
   }
 
   getCurrentRemain() {
@@ -37,6 +41,8 @@ class CountdownBar implements CountdownBarInstance {
       this.pause()
       this.options.onFinish?.()
     }
+
+    this.render()
   }
 
   microTick() {
@@ -98,6 +104,31 @@ class CountdownBar implements CountdownBarInstance {
   pause() {
     this.counting = false
     cancelRaf(this.rafId)
+  }
+
+  generateHTML() {
+    if (this.options.template) return this.options.template(this.current)
+
+    let content = `${this.current.days}:${this.current.hours}:${this.current.minutes}:${this.current.seconds}`
+
+    if (this.options.millisecond) {
+      content += `:${this.current.milliseconds}`
+    }
+
+    return `<span style="font-size:14px;color:#323233;">${content}</span>`
+  }
+
+  getContainer() {
+    return typeof this.options.container === 'string'
+      ? (document.querySelector(this.options.container) as HTMLElement | null)
+      : this.options.container
+  }
+
+  render() {
+    const container = this.getContainer()
+    if (!container) return
+
+    container.innerHTML = `${this.generateHTML()}`
   }
 }
 

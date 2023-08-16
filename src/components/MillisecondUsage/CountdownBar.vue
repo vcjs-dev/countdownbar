@@ -1,31 +1,24 @@
 <template>
-  <div v-if="current">
-    <span>Total time：{{ current.total }} , </span>
-    <span>Left days：{{ current.days }} , </span>
-    <span>Left hours：{{ current.hours }} , </span>
-    <span>Left minutes：{{ current.minutes }} , </span>
-    <span>Left seconds：{{ current.seconds }} , </span>
-    <span>Left milliseconds：{{ current.milliseconds }}</span>
-  </div>
+  <div ref="countdownBarContainer"></div>
 </template>
 
 <script lang="ts" setup>
 import { createCountdownBar } from '@/lib/main'
 import type { CountdownBarInstance } from '@/lib/interfaces/core'
-import { computed, onMounted, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const countdownInstance = ref<CountdownBarInstance>()
-
-const current = computed(() => countdownInstance.value?.current)
+const countdownBarContainer = ref<HTMLElement>()
 
 const init = () => {
-  countdownInstance.value = createCountdownBar({
-    // countdown with 24h
-    time: 24 * 60 * 60 * 1000,
-    millisecond: true,
-  })
-
-  countdownInstance.value.start()
+  if (countdownBarContainer.value) {
+    countdownInstance.value = createCountdownBar({
+      container: countdownBarContainer.value,
+      // countdown with 24h
+      time: 24 * 60 * 60 * 1000,
+      millisecond: true,
+    })
+  }
 }
 
 onMounted(() => {
