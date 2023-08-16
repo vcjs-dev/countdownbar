@@ -3,6 +3,7 @@ import type {
   CountdownBarOptions,
   CountdownBarInstance,
 } from './interfaces/core'
+import { css } from 'fourdom'
 
 class CountdownBar implements CountdownBarInstance {
   rafId: number = 0
@@ -14,6 +15,8 @@ class CountdownBar implements CountdownBarInstance {
   options: CountdownBarOptions = {
     time: 0,
     autoStart: true,
+    color: '#323233',
+    fontSize: '14px',
   }
 
   get current() {
@@ -115,7 +118,7 @@ class CountdownBar implements CountdownBarInstance {
       content += `:${this.current.milliseconds}`
     }
 
-    return `<span style="font-size:14px;color:#323233;">${content}</span>`
+    return `<span>${content}</span>`
   }
 
   getContainer() {
@@ -127,6 +130,11 @@ class CountdownBar implements CountdownBarInstance {
   render() {
     const container = this.getContainer()
     if (!container) return
+
+    css(container, {
+      'font-size': this.options.fontSize as string,
+      color: this.options.color as string,
+    })
 
     container.innerHTML = `${this.generateHTML()}`
   }

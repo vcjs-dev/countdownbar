@@ -55,6 +55,8 @@ const countdownBarInstance = createCountdownBar({
 | `time` | `number` | `0` | Total time, unit milliseconds |
 | `autoStart` | `boolean` | `true` | Whether to auto start count down |
 | `millisecond` | `boolean` | `false` | Whether to enable millisecond render |
+| `color` | `string` | `#323233` | Define `color` of countdown. |
+| `fontSize` | `string` | `14px` | Define `font-size` of countdown. |
 | `template` | `Function` | - | Custom the template of countdown bar. `(current: CurrentTime) => string` |
 | `onChange` | `Function` | - | Emitted when count down changed. `(current: CurrentTime) => void` |
 | `onFinish` | `Function` | - | Emitted when count down finished. `() => void` |

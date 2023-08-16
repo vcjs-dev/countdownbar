@@ -17,13 +17,13 @@ export default defineConfig({
   plugins: [
     vue(),
     svg4VuePlugin({
-      assetsDirName: false
-    })
+      assetsDirName: false,
+    }),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
   build: isBuildLib()
     ? {
@@ -35,13 +35,13 @@ export default defineConfig({
           name: 'Countdownbar',
           // the proper extensions will be added
           fileName: 'countdownbar',
-          formats: ['es', 'cjs', 'umd']
+          formats: ['es', 'cjs', 'umd'],
         },
         rollupOptions: {
-          external: ['fourdom']
+          external: ['fourdom'],
         },
         copyPublicDir: false,
-        cssTarget: ['chrome35']
+        cssTarget: ['chrome35'],
       }
-    : { outDir }
+    : { outDir },
 })
