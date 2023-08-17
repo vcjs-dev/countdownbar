@@ -23,10 +23,10 @@ export interface CountdownBarInstance {
   endTime: number
   counting: boolean
   remain: number
-  current(): CurrentTime
-  start: () => void
-  pause: () => void
-  reset: (totalTime?: number) => void
+  readonly current: CurrentTime
+  start(): void
+  pause(): void
+  reset(totalTime?: number): void
   tick(): void
   render(): void
 }

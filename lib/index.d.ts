@@ -23,7 +23,7 @@ interface CountdownBarInstance {
   endTime: number
   counting: boolean
   remain: number
-  get current(): CurrentTime
+  current(): CurrentTime
   start: () => void
   pause: () => void
   reset: (totalTime?: number) => void
