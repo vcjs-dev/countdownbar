@@ -19,10 +19,6 @@ class CountdownBar implements CountdownBarInstance {
     fontSize: '14px',
   }
 
-  get current() {
-    return parseTime(this.remain)
-  }
-
   constructor(opts: CountdownBarOptions) {
     this.options = Object.assign(this.options, opts)
     this.remain = this.options.time
@@ -32,13 +28,17 @@ class CountdownBar implements CountdownBarInstance {
     }
   }
 
+  current() {
+    return parseTime(this.remain)
+  }
+
   getCurrentRemain() {
     return Math.max(this.endTime - Date.now(), 0)
   }
 
   setRemain(value: number) {
     this.remain = value
-    this.options.onChange?.(this.current)
+    this.options.onChange?.(this.current())
 
     if (value === 0) {
       this.pause()
@@ -113,12 +113,14 @@ class CountdownBar implements CountdownBarInstance {
   }
 
   generateHTML() {
-    if (this.options.template) return this.options.template(this.current)
+    if (this.options.template) return this.options.template(this.current())
 
-    let content = `${this.current.days}:${this.current.hours}:${this.current.minutes}:${this.current.seconds}`
+    let content = `${this.current().days}:${this.current().hours}:${
+      this.current().minutes
+    }:${this.current().seconds}`
 
     if (this.options.millisecond) {
-      content += `:${this.current.milliseconds}`
+      content += `:${this.current().milliseconds}`
     }
 
     return `<span>${content}</span>`
