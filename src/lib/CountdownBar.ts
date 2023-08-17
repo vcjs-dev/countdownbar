@@ -102,6 +102,9 @@ class CountdownBar implements CountdownBarInstance {
   reset(totalTime: number = this.options.time) {
     this.pause()
     this.remain = totalTime
+    if (this.options.autoStart) {
+      this.start()
+    }
   }
 
   pause() {

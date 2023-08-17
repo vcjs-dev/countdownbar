@@ -16,6 +16,9 @@
       "types": "./lib/index.d.ts"
     }
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "countdown"
   ],

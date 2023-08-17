@@ -94,7 +94,7 @@ countdownBarInstance.pause()
 
 ### reset
 
-Reset count down. Accept a new time, defaults is `options.time`.
+Reset count down. Accept a new time as first param, defaults is `options.time`.
 
 ```ts
 countdownBarInstance.reset()

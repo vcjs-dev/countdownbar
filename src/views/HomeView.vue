@@ -2,6 +2,7 @@
   <main class="home-main">
     <BasicUsage />
     <MillisecondUsage />
+    <CustomStyleUsage />
   </main>
 </template>
 
@@ -9,6 +10,7 @@
 import 'prismjs'
 import BasicUsage from '@/components/BasicUsage/index.vue'
 import MillisecondUsage from '@/components/MillisecondUsage/index.vue'
+import CustomStyleUsage from '@/components/CustomStyleUsage/index.vue'
 </script>
 
 <style lang="scss" scoped>
