@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.3
+
+[compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.5.2...v1.5.3)
+
+### 🩹 Fixes
+
+- **current type:** Use readonly declare it ([72f80f0](https://github.com/vcjs-dev/countdownbar/commit/72f80f0))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.5.2
 
 [compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.5.1...v1.5.2)
