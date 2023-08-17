@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.0
+
+[compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.4.0...v1.5.0)
+
+### 🚀 Enhancements
+
+- Upgrade instance types ([adfdcd5](https://github.com/vcjs-dev/countdownbar/commit/adfdcd5))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.4.0
 
 [compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.3.0...v1.4.0)
