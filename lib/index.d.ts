@@ -20,10 +20,15 @@ type CountdownBarOptions = {
 }
 
 interface CountdownBarInstance {
+  endTime: number
+  counting: boolean
+  remain: number
+  get current(): CurrentTime
   start: () => void
   pause: () => void
-  reset: (totalTime: number) => void
-  get current(): CurrentTime
+  reset: (totalTime?: number) => void
+  tick(): void
+  render(): void
 }
 
 type CreateCountdownBar = (

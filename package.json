@@ -20,7 +20,13 @@
     "lib"
   ],
   "keywords": [
-    "countdown"
+    "countdown",
+    "timer",
+    "component",
+    "vue",
+    "react",
+    "counter",
+    "web"
   ],
   "license": "MIT",
   "repository": {
