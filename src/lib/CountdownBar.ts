@@ -99,9 +99,9 @@ class CountdownBar implements CountdownBarInstance {
     }
   }
 
-  reset(totalTime: number = this.options.time) {
+  reset(totalTime?: number) {
     this.pause()
-    this.remain = totalTime
+    this.remain = totalTime || this.options.time
     if (this.options.autoStart) {
       this.start()
     }
