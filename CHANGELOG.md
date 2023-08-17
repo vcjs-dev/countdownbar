@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.1
+
+[compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.5.0...v1.5.1)
+
+### 🏡 Chore
+
+- Update pkg keywords ([6f679b5](https://github.com/vcjs-dev/countdownbar/commit/6f679b5))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.5.0
 
 [compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.4.0...v1.5.0)
