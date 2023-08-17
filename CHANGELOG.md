@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.3.0...v1.4.0)
+
+### 🚀 Enhancements
+
+- Auto start when reset; fix pkg files ([7ebd523](https://github.com/vcjs-dev/countdownbar/commit/7ebd523))
+
+### 🏡 Chore
+
+- **docs:** Update readme ([90009df](https://github.com/vcjs-dev/countdownbar/commit/90009df))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.3.0
 
 [compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.2.0...v1.3.0)
