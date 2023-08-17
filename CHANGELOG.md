@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.5.2
+
+[compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.5.1...v1.5.2)
+
+### 🩹 Fixes
+
+- Fix class get ([8816ebd](https://github.com/vcjs-dev/countdownbar/commit/8816ebd))
+
+### ❤️  Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.5.1
 
 [compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.5.0...v1.5.1)
