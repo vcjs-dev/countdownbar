@@ -32,18 +32,23 @@ $ npm i countdownbar
 
 # Usage
 
-1. Creates a countdown bar instance.
+1. Define a container.
 
 ```html
 <div id="countdown-bar-container"></div>
 ```
 
+2. Creates a countdown bar instance.
+  
 ```ts
 import { createCountdownBar } from 'countdownbar'
 
 const countdownBarInstance = createCountdownBar({
   container: '#countdown-bar-container',
-  time: 24 * 60 * 60 * 1000
+  time: 24 * 60 * 60 * 1000,
+  onFinish() {
+    // do something when finished.
+  }
 })
 ```
 
