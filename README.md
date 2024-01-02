@@ -12,6 +12,8 @@
 
 A countdown bar library for web app.
 
+- [Release Notes](./CHANGELOG.md).
+
 # Features
 
 - Support for custom templates and styles.
@@ -104,7 +106,3 @@ Reset count down. Accept a new time as first param, defaults is `options.time`.
 ```ts
 countdownBarInstance.reset()
 ```
-
-# CHANGE LOG
-
-See [change logs](./CHANGELOG.md) here.
