@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <DemoPanel title="Basic Usage">
+    <DemoPanel title="Basic Usage" :initial-expand="true">
       <CountdownBar />
       <template #code>
         <pre
