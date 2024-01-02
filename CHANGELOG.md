@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.6.0
+
+[compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.5.3...v1.6.0)
+
+### 🚀 Enhancements
+
+- Upgrade all deps to latest version ([d6199e2](https://github.com/vcjs-dev/countdownbar/commit/d6199e2))
+
+### 🏡 Chore
+
+- Update readme ([e3d14a8](https://github.com/vcjs-dev/countdownbar/commit/e3d14a8))
+- Ignore output dir ([e87f8a3](https://github.com/vcjs-dev/countdownbar/commit/e87f8a3))
+- Update readme ([051fb6e](https://github.com/vcjs-dev/countdownbar/commit/051fb6e))
+
+### ❤️ Contributors
+
+- Wenqing <wenqing@kerrylan.com>
+
 ## v1.5.3
 
 [compare changes](https://github.com/vcjs-dev/countdownbar/compare/v1.5.2...v1.5.3)
